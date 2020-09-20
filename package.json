@@ -1,0 +1,57 @@
+{
+  "name": "discorr",
+  "version": "1.0.0",
+  "description": "A MITM to forward & format Sonarr & Radarr Webhooks for Discord Webhooks",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevYukine/Discorr.git"
+  },
+  "keywords": [
+    "sonarr",
+    "radarr",
+    "discord"
+  ],
+  "author": "DevYukine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevYukine/Discorr/issues"
+  },
+  "homepage": "https://github.com/DevYukine/Discorr#readme",
+  "scripts": {
+    "build": "gulp build",
+    "dev": "pnpm build && node .",
+    "fix": "eslint . --ext .ts --fix"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "discord.js": "^12.3.1",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-compress": "^5.0.1",
+    "koa-helmet": "^5.2.0",
+    "koa-router": "^9.4.0"
+  },
+  "devDependencies": {
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-compress": "^4.0.0",
+    "@types/koa-helmet": "^5.2.0",
+    "@types/koa-router": "^7.4.1",
+    "@types/koa__cors": "^3.0.1",
+    "@types/node": "^14.11.1",
+    "@types/ws": "^7.2.6",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "eslint": "^7.9.0",
+    "eslint-config-marine": "^7.2.0",
+    "fs-nextra": "^0.5.1",
+    "gulp": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "merge2": "^1.4.1",
+    "typescript": "^4.0.3"
+  },
+  "eslintConfig": {
+    "extends": "marine/node"
+  }
+}
